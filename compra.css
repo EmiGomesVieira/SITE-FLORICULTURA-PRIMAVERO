@@ -1,0 +1,133 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #372f75;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo das seções */
+section {
+    padding: 20px;
+}
+
+/* Estilo dos produtos */
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.produto {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto; /* Mantém a proporção das imagens */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.adicionar-carrinho {
+    background-color: #372f75;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #251b6c;
+}
+
+/* Carrinho de compras e finalização de compra */
+#carrinho, #finalizar-compra {
+    max-width: 400px; /* Define uma largura máxima para manter centralizado */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Centraliza o conteúdo */
+    background-color: white;
+}
+
+#conteudo-carrinho p {
+    margin-bottom: 15px;
+}
+
+#finalizar-compra label,
+#finalizar-compra input,
+#finalizar-compra select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#finalizar-compra button {
+    background-color: #372f75;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#finalizar-compra button:hover {
+    background-color: #251b6c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #372f75;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    /* Ajusta as colunas dos produtos para uma coluna em telas pequenas */
+    #produtos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Ajusta o carrinho e finalização de compra para ocupar a largura total em telas pequenas */
+    #carrinho, #finalizar-compra {
+        width: 100%;
+    }
+}
+

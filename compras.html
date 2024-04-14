@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja - Floricultura ABC</title>
+    <link rel="stylesheet" href="compra.css">
+    <script src="compra.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <br><h1>Primavero</h1>__________________________________________________________________________
+         <nav>
+             <ul>
+                <li><a href="primavero.html">Início</a></li>
+                <li><a href="perguntas frequentes.html">FAQs</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="localização.html">Localização</a></li>
+                <li><a href="compras.html">Loja</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+             </ul><br>
+         </nav>
+     </header>
+
+         
+         <!-- Seção de produtos -->
+         <main>
+             <section id="produtos">
+                 <!-- Produto 1 -->
+                 <div class="produto" data-id="1">
+                     <img src="img/flor1.png" alt="Produto 1">
+                     <h3>Astromélias</h3>
+                     <p>Preço: R$ 251,90</p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 2 -->
+                 <div class="produto" data-id="2">
+                     <img src="img/flor2.png" alt="Produto 2">
+                     <h3>Floratta de girassóis</h3>
+                     <p>Preço: R$ 399,90 <s>R$ 490,90</s></p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 3 -->
+                 <div class="produto" data-id="3">
+                     <img src="img/flor3.png" alt="Produto 3">
+                     <h3>Phalaenopsis pink</h3>
+                     <p>Preço: R$ 600,99 <s>R$ 849,07</s> </p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 4 -->
+                 <div class="produto" data-id="4">
+                     <img src="img/flor4.png" alt="Produto 4">
+                     <h3>Buquê de rosas</h3>
+                     <p>Preço: R$ 150,99 <s>R$ 299,90</s></p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 5 -->
+                 <div class="produto" data-id="5">
+                     <img src="img/cesta1.png" alt="Produto 5">
+                     <h3>caixa de guloseimas</h3>
+                     <p>Preço: R$ 190,00</p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 6 -->
+                 <div class="produto" data-id="6">
+                     <img src="img/cesta2.png" alt="Produto 6">
+                     <h3>Cesta café da manhã</h3>
+                     <p>Preço: R$ 100,00</p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 7 -->
+                 <div class="produto" data-id="7">
+                     <img src="img/sementes.png" alt="Produto 7">
+                     <h3>Sementes</h3>
+                     <p>Preço: R$ 30,00</p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+                 <!-- Produto 8 -->
+                 <div class="produto" data-id="8">
+                     <img src="img/decoraçao 1.png" alt="Produto 8">
+                     <h3>Decorações</h3>
+                     <p>Preço: R$ 9.000,00</p>
+                     <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                 </div>
+             </section>
+     
+             <!-- Carrinho de compras -->
+             <section id="carrinho" class="centralizado">
+                 <h2>Carrinho de Compras</h2>
+                 <div id="conteudo-carrinho">
+                     <p>O carrinho está vazio.</p>
+                 </div>
+             </section>
+     
+             <!-- Seção de finalização de compra -->
+             <section id="finalizar-compra" class="centralizado">
+                 <h2>Finalizar Compra</h2>
+                 <form id="formulario-compra" onsubmit="finalizarCompra(event)">
+                     <label for="nome">Nome:</label>
+                     <input type="text" id="nome" name="nome" required>
+                     
+                     <label for="endereco">Endereço:</label>
+                     <input type="text" id="endereco" name="endereco" required>
+                     
+                     <label for="pagamento">Forma de Pagamento:</label>
+                     <select id="pagamento" name="pagamento" required>
+                         <option value="credito">Cartão de Crédito</option>
+                         <option value="debito">Cartão de Débito</option>
+                         <option value="dinheiro">Dinheiro</option>
+                     </select>
+                     
+                     <button type="submit">Finalizar Compra</button>
+                 </form>
+             </section>
+         </main>
+     
+         <!-- Rodapé -->
+         <br><br><footer>
+             <p>&copy; 2024 Loja de Produtos. Todos os direitos reservados.</p>
+         </footer>
+     </body>
+     </html>
+     

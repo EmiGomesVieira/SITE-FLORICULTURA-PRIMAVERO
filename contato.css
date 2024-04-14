@@ -1,0 +1,111 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #372f75;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens sejam organizados em várias linhas em telas menores */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Seção de contato */
+#contato {
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: rgb(190, 190, 190);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contato h2 {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 96%; /* Altera a largura dos campos para 100% do contêiner */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #372f75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #372f75;
+}
+
+/* Rodapé */
+footer {
+    background-color: #372f75;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries para tornar a página responsiva */
+@media (max-width: 768px) {
+    /* Ajusta o tamanho do contêiner de contato */
+    #contato {
+        max-width: 100%;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* Ajusta a formatação dos botões */
+    button {
+        padding: 8px 15px;
+        width: 100%; /* Ajusta o botão para ocupar toda a largura disponível */
+    }
+
+    /* Ajusta a seção de navegação */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta os itens de navegação */
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

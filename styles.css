@@ -1,0 +1,150 @@
+/* Arquivo styles.css */
+
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #372f75;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #050506;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destaques {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.destaque img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #372f75;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #251b6c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #372f75;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries para responsividade */
+
+/* Ajustes para telas menores, como smartphones */
+@media (max-width: 600px) {
+    /* Ajuste as propriedades para dispositivos menores */
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .destaques {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .destaque img {
+        width: 100px; /* Ajusta o tamanho das imagens para dispositivos menores */
+        height: 100px;
+    }
+
+    /* Ajusta o tamanho das fontes e outros elementos */
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 10px;
+    }
+}
+
+/* Ajustes para telas médias, como tablets */
+@media (max-width: 1024px) {
+    /* Ajuste as propriedades para dispositivos médios */
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaques {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .destaque img {
+        width: 120px; /* Ajusta o tamanho das imagens para dispositivos médios */
+        height: 120px;
+    }
+
+    /* Ajusta o tamanho das fontes e outros elementos */
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+

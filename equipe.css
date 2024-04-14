@@ -1,0 +1,91 @@
+/* Estilo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #372f75;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilo da seção da equipe */
+#membros-equipe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linha-membros,
+.membros-equipe {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os membros se organizem em múltiplas linhas em telas menores */
+    margin-bottom: 20px;
+}
+
+.membro {
+    text-align: center;
+    width: 200px;
+    /* Ajusta a largura em telas menores */
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.foto-membro {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #372f75;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    /* Ajusta o layout do cabeçalho para telas menores */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta a seção da equipe para telas menores */
+    .linha-membros,
+    .membros-equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta o espaço entre os membros para telas menores */
+    .membros-equipe {
+        gap: 10px;
+    }
+}
+

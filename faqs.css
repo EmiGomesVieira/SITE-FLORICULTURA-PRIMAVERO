@@ -1,0 +1,88 @@
+/* Arquivo styles.css */
+
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #372f75;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #050506;
+}
+
+.banner img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    
+   
+}
+
+.destaques {
+    display: flex;
+    gap: 20px;
+}
+
+.destaque img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #372f75;
+}
+
+/* Rodapé */
+footer {
+    background-color: #372f75;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
